@@ -1,7 +1,10 @@
-var rect = {
-    perimeter: (x,y) => (2*(x+y)),
-    area:(x,y) => (x*y)
-}
+//for the require function to work we have to replace commented code with var rect =req..
+// var rect = {
+//     perimeter: (x,y) => (2*(x+y)),
+//     area:(x,y) => (x*y)
+// }
+var rect = require("./rectangle");
+
 function solveRect(l,b){
     console.log(`Soliving for reactangle with l = ${l} and b = ${b}`);
     if(l <= 0 || b <=0){
